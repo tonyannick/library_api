@@ -1,0 +1,271 @@
+Title,Author,Genre,Height,Publisher,Language
+Fundamentals of Wavelets,"Goswami, Jaideva",signal_processing,228,Wiley,English
+Data Smart,"Foreman, John",data_science,235,Wiley,English
+God Created the Integers,"Hawking, Stephen",mathematics,197,Penguin,English
+Superfreakonomics,"Dubner, Stephen",economics,179,HarperCollins,English
+Orientalism,"Said, Edward",history,197,Penguin,English
+"Nature of Statistical Learning Theory, The","Vapnik, Vladimir",data_science,230,Springer,English
+Integration of the Indian States,"Menon, V P",history,217,Orient Blackswan,English
+"Drunkard's Walk, The","Mlodinow, Leonard",science,197,Penguin,English
+Image Processing & Mathematical Morphology,"Shih, Frank",signal_processing,241,CRC,English
+How to Think Like Sherlock Holmes,"Konnikova, Maria",psychology,240,Penguin,English
+Data Scientists at Work,Sebastian Gutierrez,data_science,230,Apress,English
+Slaughterhouse Five,"Vonnegut, Kurt",fiction,198,Random House,English
+Birth of a Theorem,"Villani, Cedric",mathematics,234,Bodley Head,English
+Structure & Interpretation of Computer Programs,"Sussman, Gerald",computer_science,240,MIT Press,English
+"Age of Wrath, The","Eraly, Abraham",history,238,Penguin,English
+"Trial, The","Kafka, Frank",fiction,198,Random House,English
+Statistical Decision Theory',"Pratt, John",data_science,236,MIT Press,English
+Data Mining Handbook,"Nisbet, Robert",data_science,242,Apress,English
+"New Machiavelli, The","Wells, H. G.",fiction,180,Penguin,English
+Physics & Philosophy,"Heisenberg, Werner",science,197,Penguin,English
+Making Software,"Oram, Andy",computer_science,232,O'Reilly,English
+"Analysis, Vol I","Tao, Terence",mathematics,248,HBA,English
+Machine Learning for Hackers,"Conway, Drew",data_science,233,O'Reilly,English
+"Signal and the Noise, The","Silver, Nate",data_science,233,Penguin,English
+Python for Data Analysis,"McKinney, Wes",data_science,233,O'Reilly,English
+Introduction to Algorithms,"Cormen, Thomas",computer_science,234,MIT Press,English
+"Beautiful and the Damned, The","Deb, Siddhartha",nonfiction,198,Penguin,English
+"Outsider, The","Camus, Albert",fiction,198,Penguin,English
+"Complete Sherlock Holmes, The - Vol I","Doyle, Arthur Conan",fiction,176,Random House,English
+"Complete Sherlock Holmes, The - Vol II","Doyle, Arthur Conan",fiction,176,Random House,English
+"Wealth of Nations, The","Smith, Adam",economics,175,Random House,English
+"Pillars of the Earth, The","Follett, Ken",fiction,176,Random House,English
+Mein Kampf,"Hitler, Adolf",nonfiction,212,Rupa,English
+"Tao of Physics, The","Capra, Fritjof",science,179,Penguin,English
+Surely You're Joking Mr Feynman,"Feynman, Richard",science,198,Random House,English
+"Farewell to Arms, A","Hemingway, Ernest",fiction,179,Rupa,English
+"Veteran, The","Forsyth, Frederick",fiction,177,Transworld,English
+False Impressions,"Archer, Jeffery",fiction,177,Pan,English
+"Last Lecture, The","Pausch, Randy",nonfiction,197,Hyperion,English
+Return of the Primitive,"Rand, Ayn",philosophy,202,Penguin,English
+Jurassic Park,"Crichton, Michael",fiction,174,Random House,English
+"Russian Journal, A","Steinbeck, John",nonfiction,196,Penguin,English
+Tales of Mystery and Imagination,"Poe, Edgar Allen",fiction,172,HarperCollins,English
+Freakonomics,"Dubner, Stephen",economics,197,Penguin,English
+"Hidden Connections, The","Capra, Fritjof",science,197,HarperCollins,English
+"Story of Philosophy, The","Durant, Will",philosophy,170,Pocket,English
+Asami Asami,"Deshpande, P L",fiction,205,Mauj,English
+Journal of a Novel,"Steinbeck, John",fiction,196,Penguin,English
+Once There Was a War,"Steinbeck, John",nonfiction,196,Penguin,English
+"Moon is Down, The","Steinbeck, John",fiction,196,Penguin,English
+"Brethren, The","Grisham, John",fiction,174,Random House,English
+In a Free State,"Naipaul, V. S.",fiction,196,Rupa,English
+Catch 22,"Heller, Joseph",fiction,178,Random House,English
+"Complete Mastermind, The",BBC,nonfiction,178,BBC,English
+Dylan on Dylan,"Dylan, Bob",nonfiction,197,Random House,English
+Soft Computing & Intelligent Systems,"Gupta, Madan",data_science,242,Elsevier,English
+Textbook of Economic Theory,"Stonier, Alfred",economics,242,Pearson,English
+Econometric Analysis,"Greene, W. H.",economics,242,Pearson,English
+Learning OpenCV,"Bradsky, Gary",data_science,232,O'Reilly,English
+Data Structures Using C & C++,"Tanenbaum, Andrew",computer_science,235,Prentice Hall,English
+"Computer Vision, A Modern Approach","Forsyth, David",data_science,255,Pearson,English
+Principles of Communication Systems,"Taub, Schilling",computer_science,240,TMH,English
+Let Us C,"Kanetkar, Yashwant",computer_science,213,Prentice Hall,English
+"Amulet of Samarkand, The","Stroud, Jonathan",fiction,179,Random House,English
+Crime and Punishment,"Dostoevsky, Fyodor",fiction,180,Penguin,English
+Angels & Demons,"Brown, Dan",fiction,178,Random House,English
+"Argumentative Indian, The","Sen, Amartya",nonfiction,209,Picador,English
+Sea of Poppies,"Ghosh, Amitav",fiction,197,Penguin,English
+"Idea of Justice, The","Sen, Amartya",nonfiction,212,Penguin,English
+"Raisin in the Sun, A","Hansberry, Lorraine",fiction,175,Penguin,English
+All the President's Men,"Woodward, Bob",history,177,Random House,English
+"Prisoner of Birth, A","Archer, Jeffery",fiction,176,Pan,English
+Scoop!,"Nayar, Kuldip",history,216,HarperCollins,English
+Ahe Manohar Tari,"Deshpande, Sunita",nonfiction,213,Mauj,English
+"Last Mughal, The","Dalrymple, William",history,199,Penguin,English
+"Social Choice & Welfare, Vol 39 No. 1",Various,economics,235,Springer,English
+Radiowaril Bhashane & Shrutika,"Deshpande, P L",nonfiction,213,Mauj,English
+Gun Gayin Awadi,"Deshpande, P L",nonfiction,212,Mauj,English
+Aghal Paghal,"Deshpande, P L",nonfiction,212,Mauj,English
+Maqta-e-Ghalib,"Garg, Sanjay",fiction,221,Mauj,English
+Beyond Degrees,"Vapnik, Vladimir",nonfiction,222,HarperCollins,English
+Manasa,"Kale, V P",nonfiction,213,Mauj,English
+India from Midnight to Milennium,"Tharoor, Shashi",history,198,Penguin,English
+"World's Greatest Trials, The","Vapnik, Vladimir",history,210,Wiley,English
+"Great Indian Novel, The","Tharoor, Shashi",fiction,198,Penguin,English
+O Jerusalem!,"Lapierre, Dominique",history,217,vikas,English
+"City of Joy, The","Lapierre, Dominique",fiction,177,vikas,English
+Freedom at Midnight,"Lapierre, Dominique",history,167,vikas,English
+"Winter of Our Discontent, The","Steinbeck, John",fiction,196,Penguin,English
+On Education,"Russell, Bertrand",philosophy,203,Routledge,English
+Free Will,"Harris, Sam",philosophy,203,FreePress,English
+Bookless in Baghdad,"Tharoor, Shashi",nonfiction,206,Penguin,English
+"Case of the Lame Canary, The","Gardner, Earle Stanley",fiction,179,Wiley,English
+"Theory of Everything, The","Hawking, Stephen",science,217,Jaico,English
+New Markets & Other Essays,"Drucker, Peter",economics,176,Penguin,English
+Electric Universe,"Bodanis, David",science,201,Penguin,English
+"Hunchback of Notre Dame, The","Hugo, Victor",fiction,175,Random House,English
+Burning Bright,"Steinbeck, John",fiction,175,Penguin,English
+"Age of Discontuinity, The","Drucker, Peter",economics,178,Random House,English
+Doctor in the Nude,"Gordon, Richard",fiction,179,Penguin,English
+Down and Out in Paris & London,"Orwell, George",nonfiction,179,Penguin,English
+Identity & Violence,"Sen, Amartya",philosophy,219,Penguin,English
+Beyond the Three Seas,"Dalrymple, William",history,197,Random House,English
+"World's Greatest Short Stories, The",,fiction,217,Jaico,English
+Talking Straight,"Iacoca, Lee",nonfiction,175,Penguin,English
+"Maugham's Collected Short Stories, Vol 3","Maugham, William S",fiction,171,Vintage,English
+"Phantom of Manhattan, The","Forsyth, Frederick",fiction,180,Penguin,English
+Ashenden of The British Agent,"Maugham, William S",fiction,160,Vintage,English
+Zen & The Art of Motorcycle Maintenance,"Pirsig, Robert",philosophy,172,Vintage,English
+"Great War for Civilization, The","Fisk, Robert",history,197,HarperCollins,English
+We the Living,"Rand, Ayn",fiction,178,Penguin,English
+"Artist and the Mathematician, The","Aczel, Amir",science,186,HighStakes,English
+History of Western Philosophy,"Russell, Bertrand",philosophy,213,Routledge,English
+Selected Short Stories,,fiction,215,Jaico,English
+Rationality & Freedom,"Sen, Amartya",economics,213,Springer,English
+Clash of Civilizations and Remaking of the World Order,"Huntington, Samuel",history,228,Simon&Schuster,English
+Uncommon Wisdom,"Capra, Fritjof",nonfiction,197,Fontana,English
+One,"Bach, Richard",nonfiction,172,Dell,English
+Karl Marx Biography,,nonfiction,162,Random House,English
+To Sir With Love,Braithwaite,fiction,197,Penguin,English
+Half A Life,"Naipaul, V S",fiction,196,Random House,English
+"Discovery of India, The","Nehru, Jawaharlal",history,230,Random House,English
+Apulki,"Deshpande, P L",nonfiction,211,Random House,English
+Unpopular Essays,"Russell, Bertrand",philosophy,198,HighStakes,English
+"Deceiver, The","Forsyth, Frederick",fiction,178,HighStakes,English
+Veil: Secret Wars of the CIA,"Woodward, Bob",history,171,HighStakes,English
+Char Shabda,"Deshpande, P L",nonfiction,214,Dell,English
+Rosy is My Relative,"Durrell, Gerald",fiction,176,Dell,English
+"Moon and Sixpence, The","Maugham, William S",fiction,180,Dell,English
+Political Philosophers,"Woodward, Bob",philosophy,162,Jaico,English
+"Short History of the World, A","Wells, H G",history,197,Jaico,English
+"Trembling of a Leaf, The","Maugham, William S",fiction,205,Jaico,English
+Doctor on the Brain,"Gordon, Richard",fiction,204,Jaico,English
+Simpsons & Their Mathematical Secrets,"Singh, Simon",science,233,Penguin,English
+Pattern Classification,"Duda, Hart",data_science,241,Penguin,English
+From Beirut to Jerusalem,"Friedman, Thomas",history,202,Penguin,English
+"Code Book, The","Singh, Simon",science,197,HighStakes,English
+"Age of the Warrior, The","Fisk, Robert",history,197,HighStakes,English
+Final Crisis,"Legan, John",comic,257,HighStakes,English
+"Killing Joke, The","Legan, John",comic,283,Marvel,English
+Flashpoint,"Legan, John",comic,265,Marvel,English
+Batman Earth One,Bob Kane,comic,265,Marvel,English
+Crisis on Infinite Earths,Bob Kane,comic,258,Marvel,English
+"Numbers Behind Numb3rs, The","Devlin, Keith",science,202,HighStakes,English
+Superman Earth One - 1,"Bill, Finger",comic,259,DC Comics,English
+Superman Earth One - 2,"Bill, Finger",comic,258,DC Comics,English
+Justice League: Throne of Atlantis,"Bill, Finger",comic,258,DC Comics,English
+Justice League: The Villain's Journey,Stan Lee,comic,258,DC Comics,English
+"Death of Superman, The",Stan Lee,comic,258,DC Comics,English
+History of the DC Universe,Bob Kane,comic,258,DC Comics,English
+Batman: The Long Halloween,Bob Kane,comic,258,Marvel,English
+"Life in Letters, A","Steinbeck, John",nonfiction,196,Marvel,English
+"Information, The","Gleick, James",science,233,Springer Nature,English
+"Journal of Economics, vol 106 No 3",Abraham Lincoln Jr,economics,235,Penguin,English
+Elements of Information Theory,"Thomas, Joy",data_science,229,Springer Nature,English
+Power Electronics - Rashid,"Rashid, Muhammad",computer_science,235,Springer Nature,English
+Power Electronics - Mohan,"Mohan, Ned",computer_science,237,Springer Nature,English
+Neural Networks,"Haykin, Simon",data_science,240,Springer Nature,English
+"Grapes of Wrath, The","Steinbeck, John",fiction,196,DC Comics,English
+Vyakti ani Valli,"Deshpande, P L",nonfiction,211,DC Comics,English
+Statistical Learning Theory,"Vapnik, Vladimir",data_science,228,HighStakes,English
+Empire of the Mughal - The Tainted Throne,"Rutherford, Alex",history,180,Egerton University,English
+Empire of the Mughal - Brothers at War,"Rutherford, Alex",history,180,Egerton University,English
+Empire of the Mughal - Ruler of the World,"Rutherford, Alex",history,180,Egerton University,English
+Empire of the Mughal - The Serpent's Tooth,"Rutherford, Alex",history,180,Egerton University,English
+Empire of the Mughal - Raiders from the North,"Rutherford, Alex",history,180,Egerton University,English
+Mossad,"Baz-Zohar, Michael",history,236,Egerton University,English
+Jim Corbett Omnibus,"Corbett, Jim",nonfiction,223,Jaico,English
+20000 Leagues Under the Sea,"Verne, Jules",fiction,190,Jaico,English
+Batatyachi Chal,Deshpande P L,fiction,200,Jaico,English
+Hafasavnuk,Deshpande P L,fiction,211,Jaico,English
+Urlasurla,Deshpande P L,fiction,211,Jaico,English
+Pointers in C,"Kanetkar, Yashwant",computer_science,213,TechRevue,English
+"Cathedral and the Bazaar, The","Raymond, Eric",computer_science,217,TechRevue,English
+Design with OpAmps,"Franco, Sergio",computer_science,240,TechRevue,English
+Think Complexity,"Downey, Allen",data_science,230,Springer Nature,English
+"Devil's Advocate, The","West, Morris",fiction,178,DC Comics,English
+Ayn Rand Answers,"Rand, Ayn",philosophy,203,UniCesumar,English
+Philosophy: Who Needs It,"Rand, Ayn",philosophy,171,UniCesumar,English
+"World's Great Thinkers, The",,philosophy,189,UniCesumar,English
+Data Analysis with Open Source Tools,"Janert, Phillip",data_science,230,Springer Nature,English
+Broca's Brain,"Sagan, Carl",science,174,Springer Nature,English
+Men of Mathematics,"Bell, E T",mathematics,217,TechRevue,English
+Oxford book of Modern Science Writing,"Dawkins, Richard",science,240,Springer Nature,English
+"Justice, Judiciary and Democracy","Ranjan, Sudhanshu",philosophy,224,UniCesumar,English
+"Arthashastra, The",Kautiyla,philosophy,214,UniCesumar,English
+We the People,Palkhivala,philosophy,216,UniCesumar,English
+We the Nation,Palkhivala,philosophy,216,UniCesumar,English
+"Courtroom Genius, The",Sorabjee,nonfiction,217,Absey & Company,English
+Dongri to Dubai,"Zaidi, Hussain",nonfiction,216,Absey & Company,English
+"History of England, Foundation","Ackroyd, Peter",history,197,UniCesumar,English
+City of Djinns,"Dalrymple, William",history,198,UniCesumar,English
+India's Legal System,Nariman,nonfiction,177,Marvel,English
+More Tears to Cry,"Sassoon, Jean",fiction,235,Absey & Company,English
+"Ropemaker, The","Dickinson, Peter",fiction,196,Absey & Company,English
+Angels & Demons,"Brown, Dan",fiction,170,Absey & Company,English
+"Judge, The","Brown, Dan",fiction,170,Absey & Company,English
+"Attorney, The","Brown, Dan",fiction,170,Absey & Company,English
+"Prince, The",Machiavelli,philosophy,173,UniCesumar,English
+Eyeless in Gaza,"Huxley, Aldous",fiction,180,Marvel,English
+Tales of Beedle the Bard,"Rowling, J K",fiction,184,Marvel,English
+Girl with the Dragon Tattoo,"Larsson, Steig",fiction,179,Marvel,English
+Girl who kicked the Hornet's Nest,"Larsson, Steig",fiction,179,Marvel,English
+Girl who played with Fire,"Larsson, Steig",fiction,179,DC Comics,English
+Batman Handbook,"Rowling, J K",comic,270,DC Comics,English
+Murphy's Law,"Rowling, J K",nonfiction,178,DC Comics,English
+Structure and Randomness,"Tao, Terence",mathematics,252,vikas,English
+Image Processing with MATLAB,"Eddins, Steve",signal_processing,241,vikas,English
+Animal Farm,"Orwell, George",fiction,180,vikas,English
+"Idiot, The","Dostoevsky, Fyodor",fiction,197,vikas,English
+"Christmas Carol, A","Dickens, Charles",fiction,196,vikas,English
+Dragon ball,Akira Toriyama,Shonen,390,Shūeisha,French
+Dragon ball Z,Akira Toriyama,Shonen,450,Shūeisha,French
+Dragon ball GT,Akira Toriyama,Shonen,280,Shūeisha,French
+Dragon ball Super,Akira Toriyama,Shonen,350,Shūeisha,French
+Dr Slump,Akira Toriyama,Mangas,170,Shūeisha,French
+Jaco the Galactic Patrolman,Akira Toriyama,Shonen,100,Shūeisha,French
+Naruto,Masashi Kishimoto,Shonen,380,Shūeisha,French
+Naruto Shippuden,Masashi Kishimoto,Shonen,300,Shūeisha,French
+Naruto Gaiden,Masashi Kishimoto,Shonen,100,Shūeisha,French
+Naruto Gaiden,Masashi Kishimoto,Shonen,100,Shūeisha,French
+"Samurai 8, La Légende d'Hachimaru",Masashi Kishimoto,Shonen,70,Shūeisha,French
+Bleach,Tite Kubo,Shonen,270,Shūeisha,French
+Burn the Witch,Tite Kubo,Shonen,110,Shūeisha,French
+Saint Seiya,Masami Kurumada,Shonen,390,Shūeisha,French
+"Saint Seiya, Chapitre Hades",Masami Kurumada,Shonen,300,Shūeisha,French
+"Saint Seiya,The Lost Canvas",Masami Kurumada,Shonen,220,Shūeisha,French
+"Saint Seiya,The Lost Canvas",Masami Kurumada,Shonen,220,Shūeisha,French
+Fairy Tail Zero,Hiro Mashima,Shonen,340,Kōdansha,French
+Fairy Tail S,Hiro Mashima,Shonen,220,Kōdansha,French
+Edens Zero,Hiro Mashima,Shonen,130,Kōdansha,French
+Samurai Deeper Kyo,Akimine Kamijyo,Shonen,160,Kōdansha,French
+Kingdom,Yasuhisa Hara,Seinen,500,Shūeisha,French
+Erased,Kei Sanbe,Seinen,200,Kadokawa,French
+Berserk,Kentarō Miura,Seinen,600,Hakusensha,French
+Samurai Champloo,Dai Sato,Seinen,150,Kadokawa,French
+Black Lagoon,Rei Hiroe,Seinen,220,Shōgakukan,French
+Kill la Kill,Kazuki Nakashima,Seinen,130,Kadokawa,French
+Another,Yukito Ayatsuji,Seinen,110,Kadokawa,French
+Vinland Saga,Makoto Yukimura,Seinen,500,Kōdansha,French
+Claymore,Norihiro Yagi,Shonen,190,Shūeisha,French
+Gangsta,Kohske,Seinen,100,Shinchōsha,French
+Gantz,Hiroya Oku,Seinen,280,Shūeisha,French
+Samurai Deeper Kyo,Akimine Kamijyo,Shōnen,290,Kōdansha,French
+Watchmen,Alan Moore,comic,90,DC Comics,French
+The Walking Dead,Robert Kirkman,fiction,800,Glénat Disney,French
+La Jeunesse de Picsou,Don Rosa,comic,750,Glénat Disney,French
+La Grande épopée de Picsou,Don Rosa,comic,290,Glénat Disney,French
+"Daredevil, Renaissance",David Mazzucchelli,comic,170,Panini,French
+"Punisher, Cercle de sang",Steven Grant,comic,100,Panini,French
+"Boruto,Two Blue Vortex",Masashi Kishimoto,Shonen,300,Shūeisha,French
+"Naruto,Sasuke Retsuden",Masashi Kishimoto,Shonen,100,Shūeisha,French
+JUSTICE LEAGUE CRISE D'IDENTITÉ,Meltzer Brad,comic,140,URBAN COMICS,French
+Heroes in Crisis,Weeks Lee,comic,170,URBAN COMICS,French
+Tokyo Ghoul,Sui Ishida,Seinen,250,Shūeisha,French
+Harry Potter et la Chambre des Secrets,J.K. Rowling,fiction,370,GALLIMARD JEUNE,French
+Harry Potter et le prisonnier d'Azkaban,J.K. Rowling,fiction,450,GALLIMARD JEUNE,French
+Harry Potter à l'école des sorciers,J.K. Rowling,fiction,320,GALLIMARD JEUNE,French
+HARRY POTTER ET L'ORDRE DU PHENIX,J.K. Rowling,fiction,600,GALLIMARD JEUNE,French
+Harry Potter et la Chambre des Secrets,J.K. Rowling,fiction,370,GALLIMARD JEUNE,French
+L'académie des dragons,Jupiter Phaeton,fiction,500,Jupiter Phaeton Editions,French
+Les secrets de Dumbledore,J.K. Rowling,fiction,180,GALLIMARD JEUNE,French
+HARRY POTTER ET L'ENFANT MAUDIT,J.K. Rowling,fiction,460,GALLIMARD JEUNE,French
+Goblin Slayer Year One,Kumo Kagyu,Seinen,280,Kurokawa,French
+Manchuria Opium Squad,MONMA Tsukasa,Seinen,190,VEGA DUPUIS,French
+The Fable,Katsuhisa Minami,Seinen,540,Pika,French
+"Game of Thrones, le Trône de fer",R.R Martin,fiction,980,HUGINN MUNINN,French
+Spy x Family,Tatsuya Endo,Mangas,200,Kurokawa,French
+No bullshit guide to linear algebra,Ivan Savov,mathematics,600,Minireference Co,English
+Schaum's Outlines Linear Algebra,Seymour Lipschutz,mathematics,450,Minireference Co,English
