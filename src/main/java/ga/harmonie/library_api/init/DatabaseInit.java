@@ -70,12 +70,6 @@ public class DatabaseInit implements CommandLineRunner {
                     bookServices.addBookType(newBookType);
                 }
 
-                /*var optionalType = bookServices.findBookTypeByTitle(book.getGenre());
-                if(optionalType.isEmpty()){
-                    bookServices.addBookType(newBookType);
-                }*/
-
-
                 try {
                     //Add publisher in database if it isn't exist
                     //generate random creation date for each publisher
@@ -105,7 +99,7 @@ public class DatabaseInit implements CommandLineRunner {
                             .publicationDate(bookPublicationDate)
                             .build();
 
-                    //Add author if exist
+                    //Add author if  exist
                     var checkAuthor = authorServices.findAuthorByFullName(book.getAuthor());
                     if(checkAuthor.isPresent()){
                         newBook.setAuthor(checkAuthor.get());
@@ -120,7 +114,12 @@ public class DatabaseInit implements CommandLineRunner {
                     if(checkPublisher.isPresent()){
                         newBook.setPublisher(checkPublisher.get());
                     }
-                    bookServices.addBook(newBook);
+
+                    //Add book if it does not exist
+                    var optionalBook = bookServices.findBookByTitle(newBook.getTitle());
+                    if(optionalBook.isEmpty()){
+                        bookServices.addBook(newBook);
+                    }
 
                 } catch (ParseException e) {
                     throw new RuntimeException(e);

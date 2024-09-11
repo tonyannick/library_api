@@ -11,12 +11,13 @@ import java.util.Optional;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
-    Book findBookById(long id);
-    Book findBookByTitle(String title);
+    Optional<Book> findBookById(long id);
+    Optional<Book> findBookByTitle(String title);
     Optional<Book> findBookByIsbn(String isbn);
-    List<Book> findBookByAuthor(Author author);
+    List<Book> findBookByAuthor_FullName(String authorName);
     List<Book> findBookByPrice(Double price);
     List<Book> findBookByBookType_Title(String title);
     List<Book> findBookByLanguage(String language);
+    List<Book> findBookByPublisher_PublisherName(String publisherName);
 
 }

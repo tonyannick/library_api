@@ -29,50 +29,42 @@ public class BookControllerImpl implements BookController{
     @Override
     public ResponseEntity<List<BookDTO>> getAllBooks() {
         var booksList = bookServices.getAllBooks();
-        var bookDTOList = new ArrayList<BookDTO>();
-        booksList.forEach(book ->
-            bookDTOList.add(bookToBookDTO(book)));
+        var bookDTOList = convertBooksListToBooksDTOList(booksList);
         return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<BookDTO>> getAllBooksByLanguage(String language) {
         var booksList = bookServices.getAllBooksByLanguage(language);
-        var bookDTOList = new ArrayList<BookDTO>();
-        booksList.forEach(book ->
-                bookDTOList.add(bookToBookDTO(book)));
+        var bookDTOList = convertBooksListToBooksDTOList(booksList);
         return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<BookDTO>> getAllBooksByPublishers(String publisher) {
-        return null;
+        var booksList = bookServices.getAllBooksByPublisher(publisher);
+        var bookDTOList = convertBooksListToBooksDTOList(booksList);
+        return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<BookDTO>> getAllBooksByAuthorFullName(String authorFullName) {
-        var author = new Author.Builder()
-                .fullName(authorFullName)
-                .build();
-        var authorBooksList = bookServices.getAllBooksByAuthor(author);
-        var bookDTOList = new ArrayList<BookDTO>();
-        authorBooksList.forEach(book ->
-                bookDTOList.add(bookToBookDTO(book)));
+        var authorBooksList = bookServices.getAllBooksByAuthor(authorFullName);
+        var bookDTOList = convertBooksListToBooksDTOList(authorBooksList);
         return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<BookDTO>> getAllBooksByGenre(String genre) {
         var booksList = bookServices.getBooksByType(genre);
-        var bookDTOList = new ArrayList<BookDTO>();
-        booksList.forEach(book ->
-                bookDTOList.add(bookToBookDTO(book)));
+        var bookDTOList = convertBooksListToBooksDTOList(booksList);
         return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<BookDTO> getBookById(long id) {
-        return null;
+        var optionalBook =  bookServices.findBookById(id);
+        return optionalBook.map(book -> ResponseEntity.ok().body(bookToBookDTO(book))).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Override
@@ -85,10 +77,25 @@ public class BookControllerImpl implements BookController{
     }
 
     @Override
+    public ResponseEntity<BookDTO> getBookByISBN(String isbn) {
+        var optionalBook = bookServices.findBookByIsbn(isbn);
+        if(optionalBook.isPresent()){
+            return ResponseEntity.ok().body(bookToBookDTO(optionalBook.get()));
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    @Override
     public BookDTO bookToBookDTO(Book book) {
         var author = book.getAuthor();
         var bookType = book.getBookType();
         var publisher = book.getPublisher();
         return bookMapper.INSTANCE.toBookDTO(book,author,bookType,publisher);
+    }
+
+    private List<BookDTO> convertBooksListToBooksDTOList(List<Book> booksList){
+        var bookDTOList = new ArrayList<BookDTO>();
+        booksList.forEach(book -> bookDTOList.add(bookToBookDTO(book)));
+        return bookDTOList;
     }
 }

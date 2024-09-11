@@ -31,5 +31,8 @@ public interface BookController {
     @GetMapping("/book/title/{title}")
     ResponseEntity<BookDTO> getBookByTitle(@PathVariable("title") String title);
 
+    @GetMapping("/book/isbn/{isbn}")
+    ResponseEntity<BookDTO> getBookByISBN(@PathVariable("isbn") String isbn);
+
     BookDTO bookToBookDTO(Book book);
 }

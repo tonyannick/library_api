@@ -57,8 +57,8 @@ public class BookServicesImpl implements BookServices {
     }
 
     @Override
-    public List<Book> getAllBooksByAuthor(Author author) {
-        return bookRepository.findBookByAuthor(author);
+    public List<Book> getAllBooksByAuthor(String authorName) {
+        return bookRepository.findBookByAuthor_FullName(authorName);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class BookServicesImpl implements BookServices {
 
     @Override
     public Optional<Book> findBookByTitle(String title) {
-        return Optional.empty();
+        return bookRepository.findBookByTitle(title);
     }
 
     @Override
@@ -77,8 +77,18 @@ public class BookServicesImpl implements BookServices {
     }
 
     @Override
+    public List<Book> getAllBooksByPublisher(String publisherName) {
+        return bookRepository.findBookByPublisher_PublisherName(publisherName);
+    }
+
+    @Override
     public Optional<Book> findBookByIsbn(String isbn) {
         return bookRepository.findBookByIsbn(isbn);
+    }
+
+    @Override
+    public Optional<Book> findBookById(long id) {
+        return bookRepository.findBookById(id);
     }
 
     @Override
