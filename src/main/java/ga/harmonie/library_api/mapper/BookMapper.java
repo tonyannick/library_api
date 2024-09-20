@@ -16,7 +16,7 @@ public interface BookMapper {
 
     @Mapping(source ="book.id",target = "bookId")
     @Mapping(source ="author.fullName",target = "authorFullname")
-    @Mapping(source ="bookType.title",target = "type")
+    //@Mapping(source ="bookType.title",target = "type")
     @Mapping(source ="book.title",target = "title")
     @Mapping(source ="book.isbn",target = "isbn")
     @Mapping(source ="book.price",target = "price")

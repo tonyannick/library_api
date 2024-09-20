@@ -15,7 +15,6 @@ public final class DatesUtils {
         var startDate = DateUtils.parseDate("01-01-1970", "dd-MM-yyyy");
         var endDate = DateUtils.parseDate("31-12-2023", "dd-MM-yyyy");
         var randomDate = getRandomDate(startDate, endDate);
-        //System.out.println("Random Date using Commons: " + randomDate);
         return randomDate;
     }
 

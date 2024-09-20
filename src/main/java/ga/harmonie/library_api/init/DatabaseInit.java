@@ -1,6 +1,5 @@
 package ga.harmonie.library_api.init;
 
-
 import ga.harmonie.library_api.csv.BookCSVReader;
 import ga.harmonie.library_api.entities.Author;
 import ga.harmonie.library_api.entities.Book;
@@ -13,12 +12,13 @@ import ga.harmonie.library_api.utils.DatesUtils;
 import ga.harmonie.library_api.utils.StringUtils;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.text.ParseException;
 
 @Component
@@ -32,21 +32,17 @@ public class DatabaseInit implements CommandLineRunner {
     AuthorServices authorServices;
     @Autowired
     PublisherServices publisherServices;
-
-
     @Autowired
     BookCSVReader bookCSVReader;
 
+    private static final Logger logger = LoggerFactory.getLogger(DatabaseInit.class);
+
     @Override
     public void run(String... args) throws Exception {
-        loadAllBookFromCSVFile();
+        loadAllBooksFromCSVFile();
     }
 
-    private void addBookInDatabase() throws IOException {
-
-    }
-
-    private void loadAllBookFromCSVFile(){
+    private void loadAllBooksFromCSVFile(){
         bookCSVReader.loadBookDataFromCSVFile().forEach(book -> {
             if(bookServices.findBookByTitle(book.getTitle()).isEmpty()){
 
@@ -57,16 +53,18 @@ public class DatabaseInit implements CommandLineRunner {
 
                 var optionalAuhtor = authorServices.findAuthorByFullName(book.getAuthor());
                 if(optionalAuhtor.isEmpty()){
+                    logger.info("Add author {} in database : ",newAuthor.getFullName());
                     authorServices.addNewAuthor(newAuthor);
                 }
 
                 //Add booktype in database if it isn't exist
                 var newBookType = new BookType.Builder()
-                        .title(book.getGenre())
+                        .type(book.getMainType())
                         .build();
 
-                var optionalType = bookServices.findBookTypeByTitle(book.getGenre());
+                var optionalType = bookServices.findBookTypeByTitle(book.getMainType());
                 if(optionalType.isEmpty()){
+                    logger.info("Add type {} into database : ",newBookType);
                     bookServices.addBookType(newBookType);
                 }
 
@@ -81,6 +79,7 @@ public class DatabaseInit implements CommandLineRunner {
 
                     var optionalPublisher = publisherServices.findPublisherByName(book.getPublisher());
                     if(optionalPublisher.isEmpty()){
+                        logger.info("Add publisher {} into database : ",newPublisher.getPublisherName());
                         publisherServices.addNewPublisher(newPublisher);
                     }
 
@@ -102,10 +101,11 @@ public class DatabaseInit implements CommandLineRunner {
                     //Add author if  exist
                     var checkAuthor = authorServices.findAuthorByFullName(book.getAuthor());
                     if(checkAuthor.isPresent()){
+                        logger.info("Add author {} into database",checkAuthor.get());
                         newBook.setAuthor(checkAuthor.get());
                     }
                     //Add book type if exist
-                    var checkBookType = bookServices.findBookTypeByTitle(book.getGenre());
+                    var checkBookType = bookServices.findBookTypeByTitle(book.getMainType());
                     if(checkBookType.isPresent()){
                         newBook.setBookType(checkBookType.get());
                     }
@@ -118,14 +118,15 @@ public class DatabaseInit implements CommandLineRunner {
                     //Add book if it does not exist
                     var optionalBook = bookServices.findBookByTitle(newBook.getTitle());
                     if(optionalBook.isEmpty()){
+                        logger.info("Add book {} into database",newBook);
                         bookServices.addBook(newBook);
                     }
 
                 } catch (ParseException e) {
+                    logger.error("Error when trying to read the CSV file  \n : ", e);
                     throw new RuntimeException(e);
                 }
             }
-            //System.out.println(book.getTitle()+","+book.getAuthor()+","+book.getGenre()+","+book.getHeight()+","+book.getPublisher()+","+book.getLanguage());
         });
     }
 

@@ -1,11 +1,12 @@
 package ga.harmonie.library_api.controller;
 
 import ga.harmonie.library_api.dto.BookDTO;
-import ga.harmonie.library_api.entities.Author;
 import ga.harmonie.library_api.entities.Book;
 import ga.harmonie.library_api.mapper.BookMapper;
 import ga.harmonie.library_api.services.BookServices;
 import ga.harmonie.library_api.services.PublisherServices;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,8 @@ import java.util.List;
 @RestController
 @RequestMapping("library")
 public class BookControllerImpl implements BookController{
+
+    private static final Logger logger = LoggerFactory.getLogger(BookControllerImpl.class);
 
     @Autowired
     BookServices bookServices;
@@ -55,8 +58,8 @@ public class BookControllerImpl implements BookController{
     }
 
     @Override
-    public ResponseEntity<List<BookDTO>> getAllBooksByGenre(String genre) {
-        var booksList = bookServices.getBooksByType(genre);
+    public ResponseEntity<List<BookDTO>> getAllBooksByMainType(String genre) {
+        var booksList = bookServices.getAllBooksByMainType(genre);
         var bookDTOList = convertBooksListToBooksDTOList(booksList);
         return new ResponseEntity<>(bookDTOList, HttpStatus.OK);
     }

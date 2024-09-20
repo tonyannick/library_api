@@ -100,6 +100,16 @@ public class Book {
         }
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", pages=" + pages +
+                ", isbn='" + isbn + '\'' +
+                ", price=" + price +
+                ", publicationDate=" + publicationDate +
+                ", language='" + language + '\'' +
+                ", author=" + author +
+                '}';
+    }
 }

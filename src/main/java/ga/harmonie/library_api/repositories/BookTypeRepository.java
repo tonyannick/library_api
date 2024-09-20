@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface BookTypeRepository extends JpaRepository<BookType, Long> {
 
-    Optional<BookType> findDistinctFirstByTitle(String title);
+    Optional<BookType> findDistinctFirstByType(String masterType);
 }

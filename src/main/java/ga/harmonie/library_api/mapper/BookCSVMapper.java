@@ -14,8 +14,10 @@ public class BookCSVMapper {
     String title;
     @CsvBindByName(column = "Author")
     String author;
-    @CsvBindByName(column = "Genre")
-    String genre;
+    @CsvBindByName(column = "Master category")
+    String mainType;
+    @CsvBindByName(column = "Child category")
+    String childType;
     @CsvBindByName(column = "Height")
     String height;
     @CsvBindByName(column = "Publisher")

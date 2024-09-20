@@ -22,8 +22,8 @@ public interface BookController {
     @GetMapping("/books/author/{authorFullName}")
     ResponseEntity<List<BookDTO>> getAllBooksByAuthorFullName(@PathVariable("authorFullName") String authorFullName);
 
-    @GetMapping("/books/genre/{genre}")
-    ResponseEntity<List<BookDTO>> getAllBooksByGenre(@PathVariable("genre") String genre);
+    @GetMapping("/books/genre/main/{genre}")
+    ResponseEntity<List<BookDTO>> getAllBooksByMainType(@PathVariable("genre") String genre);
 
     @GetMapping("/book/{id}")
     ResponseEntity<BookDTO> getBookById(@PathVariable("id") long id);

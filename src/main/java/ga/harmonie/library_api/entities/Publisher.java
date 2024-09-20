@@ -35,7 +35,6 @@ public class Publisher {
     }
 
     public static class Builder{
-
         String publisherName;
         Date creationDate;
 
@@ -52,5 +51,13 @@ public class Publisher {
         public Publisher build(){
             return new Publisher(this);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Publisher{" +
+                "publisherName='" + publisherName + '\'' +
+                ", creationDate=" + creationDate +
+                '}';
     }
 }

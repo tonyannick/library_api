@@ -1,6 +1,6 @@
 package ga.harmonie.library_api.services.implementation;
 
-import ga.harmonie.library_api.entities.Author;
+
 import ga.harmonie.library_api.entities.Book;
 import ga.harmonie.library_api.entities.BookType;
 import ga.harmonie.library_api.repositories.BookRepository;
@@ -47,11 +47,6 @@ public class BookServicesImpl implements BookServices {
     }
 
     @Override
-    public List<Book> getBooksByType(String type) {
-        return bookRepository.findBookByBookType_Title(type);
-    }
-
-    @Override
     public List<Book> getBooksByPrice(Double price) {
         return bookRepository.findBookByPrice(price);
     }
@@ -82,6 +77,11 @@ public class BookServicesImpl implements BookServices {
     }
 
     @Override
+    public List<Book> getAllBooksByMainType(String type) {
+        return bookRepository.findBookByBookType_type(type);
+    }
+
+    @Override
     public Optional<Book> findBookByIsbn(String isbn) {
         return bookRepository.findBookByIsbn(isbn);
     }
@@ -93,6 +93,6 @@ public class BookServicesImpl implements BookServices {
 
     @Override
     public Optional<BookType> findBookTypeByTitle(String title) {
-        return bookTypeRepository.findDistinctFirstByTitle(title);
+        return bookTypeRepository.findDistinctFirstByType(title);
     }
 }

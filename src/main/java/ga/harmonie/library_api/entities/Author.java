@@ -40,4 +40,11 @@ public class Author {
             return new Author(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "fullName='" + fullName + '\'' +
+                '}';
+    }
 }

@@ -17,21 +17,21 @@ public class BookType {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     @Column(length = 50, nullable = false)
-    String title;
+    String type;
 
     @OneToMany(mappedBy = "bookType")
     Collection<Book> bookCollection;
 
     public BookType(Builder builder){
-        this.title = builder.title;
+        this.type = builder.type;
     }
 
     public static class Builder{
 
-        String title;
+        String type;
 
-        public Builder title(String title){
-            this.title = title;
+        public Builder type(String type){
+            this.type = type;
             return this;
         }
 
@@ -40,4 +40,10 @@ public class BookType {
         }
     }
 
+    @Override
+    public String toString() {
+        return "BookType{" +
+                "type='" + type + '\'' +
+                '}';
+    }
 }
