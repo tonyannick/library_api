@@ -28,7 +28,7 @@ public class PublisherServicesImpl implements PublisherServices {
     }
 
     @Override
-    public Optional<Publisher> findPublisherByName(String name) {
+    public Optional<Publisher> getPublisherByName(String name) {
         return publisherRepository.findDistinctFirstByPublisherName(name);
     }
 }

@@ -1,4 +1,4 @@
-package ga.harmonie.library_api.controller.Author;
+package ga.harmonie.library_api.controller.author;
 
 import ga.harmonie.library_api.dto.AuthorDTO;
 import ga.harmonie.library_api.entities.Author;
@@ -16,6 +16,6 @@ public interface AuthorController {
     @GetMapping("/author/fullname/{fullName}")
     ResponseEntity<AuthorDTO> getAuthorByFullName(@PathVariable("fullName") String fullName);
 
-    List<AuthorDTO> converAuthorsListToAuthorsDTOList(List<Author> authorsList);
+    List<AuthorDTO> convertAuthorsListToAuthorsDTOList(List<Author> authorsList);
     AuthorDTO authorToAuthorDTO(Author author);
 }

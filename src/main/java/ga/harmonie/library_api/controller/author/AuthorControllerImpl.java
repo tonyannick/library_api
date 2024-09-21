@@ -1,4 +1,4 @@
-package ga.harmonie.library_api.controller.Author;
+package ga.harmonie.library_api.controller.author;
 
 import ga.harmonie.library_api.dto.AuthorDTO;
 import ga.harmonie.library_api.entities.Author;
@@ -25,7 +25,7 @@ public class AuthorControllerImpl implements AuthorController{
     @Override
     public ResponseEntity<List<AuthorDTO>> getAllAuthors() {
         var authorList =  authorServices.showAllAuthors();
-        var authorDTOList =  converAuthorsListToAuthorsDTOList(authorList);
+        var authorDTOList =  convertAuthorsListToAuthorsDTOList(authorList);
         return new ResponseEntity<>(authorDTOList, HttpStatus.OK);
     }
 
@@ -44,7 +44,7 @@ public class AuthorControllerImpl implements AuthorController{
     }
 
     @Override
-    public List<AuthorDTO> converAuthorsListToAuthorsDTOList(List<Author> authorsList) {
+    public List<AuthorDTO> convertAuthorsListToAuthorsDTOList(List<Author> authorsList) {
         var authorDTOList = new ArrayList<AuthorDTO>();
         authorsList.forEach(author -> authorDTOList.add(authorToAuthorDTO(author)));
         return authorDTOList;

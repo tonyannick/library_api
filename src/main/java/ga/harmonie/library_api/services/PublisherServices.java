@@ -9,5 +9,5 @@ public interface PublisherServices {
 
     Publisher addNewPublisher(Publisher newPublisher);
     List<Publisher> showAllPublishers();
-    Optional<Publisher> findPublisherByName(String name);
+    Optional<Publisher> getPublisherByName(String name);
 }

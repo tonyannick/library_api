@@ -77,7 +77,7 @@ public class DatabaseInit implements CommandLineRunner {
                             .creationDate(publisherCreationDate)
                             .build();
 
-                    var optionalPublisher = publisherServices.findPublisherByName(book.getPublisher());
+                    var optionalPublisher = publisherServices.getPublisherByName(book.getPublisher());
                     if(optionalPublisher.isEmpty()){
                         logger.info("Add publisher {} into database : ",newPublisher.getPublisherName());
                         publisherServices.addNewPublisher(newPublisher);
@@ -110,7 +110,7 @@ public class DatabaseInit implements CommandLineRunner {
                         newBook.setBookType(checkBookType.get());
                     }
                     //Add publisher if exist
-                    var checkPublisher = publisherServices.findPublisherByName(book.getPublisher());
+                    var checkPublisher = publisherServices.getPublisherByName(book.getPublisher());
                     if(checkPublisher.isPresent()){
                         newBook.setPublisher(checkPublisher.get());
                     }
@@ -120,11 +120,12 @@ public class DatabaseInit implements CommandLineRunner {
                     if(optionalBook.isEmpty()){
                         logger.info("Add book {} into database",newBook);
                         bookServices.addBook(newBook);
+                    }else{
+                        logger.info("The book {} is already stored in the database ",newBook.getTitle());
                     }
 
                 } catch (ParseException e) {
                     logger.error("Error when trying to read the CSV file  \n : ", e);
-                    throw new RuntimeException(e);
                 }
             }
         });

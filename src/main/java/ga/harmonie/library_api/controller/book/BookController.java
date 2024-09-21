@@ -1,4 +1,4 @@
-package ga.harmonie.library_api.controller.Book;
+package ga.harmonie.library_api.controller.book;
 
 import ga.harmonie.library_api.dto.BookDTO;
 import ga.harmonie.library_api.entities.Book;
