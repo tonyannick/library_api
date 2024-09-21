@@ -1,4 +1,4 @@
-package ga.harmonie.library_api.controller;
+package ga.harmonie.library_api.controller.Book;
 
 import ga.harmonie.library_api.dto.BookDTO;
 import ga.harmonie.library_api.entities.Book;
@@ -95,8 +95,8 @@ public class BookControllerImpl implements BookController{
         var publisher = book.getPublisher();
         return bookMapper.INSTANCE.toBookDTO(book,author,bookType,publisher);
     }
-
-    private List<BookDTO> convertBooksListToBooksDTOList(List<Book> booksList){
+    @Override
+    public List<BookDTO> convertBooksListToBooksDTOList(List<Book> booksList){
         var bookDTOList = new ArrayList<BookDTO>();
         booksList.forEach(book -> bookDTOList.add(bookToBookDTO(book)));
         return bookDTOList;

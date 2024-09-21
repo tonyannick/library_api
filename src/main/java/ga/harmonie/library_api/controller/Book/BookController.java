@@ -1,4 +1,4 @@
-package ga.harmonie.library_api.controller;
+package ga.harmonie.library_api.controller.Book;
 
 import ga.harmonie.library_api.dto.BookDTO;
 import ga.harmonie.library_api.entities.Book;
@@ -35,4 +35,6 @@ public interface BookController {
     ResponseEntity<BookDTO> getBookByISBN(@PathVariable("isbn") String isbn);
 
     BookDTO bookToBookDTO(Book book);
+
+    List<BookDTO> convertBooksListToBooksDTOList(List<Book> booksList);
 }
